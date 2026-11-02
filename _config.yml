@@ -1,0 +1,89 @@
+# Site settings
+title: izgrimean
+email: izgrimean@gmail.com
+url: https://github.com/izgrimean/izgrimean.github.io
+description: "글과 그림이 가지는 다양한 의미를 책이라는 매개체를 통해 구현하고자 합니다."
+keywords: "글과 그림이 가지는 다양한 의미를 책이라는 매개체를 통해 구현하고자 합니다."
+skills: "글과 그림이 가지는 다양한 의미를 책이라는 매개체를 통해 구현하고자 합니다."
+meta_author: 대표 박조은
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 2d2d51 #18bc9c #80B3FF 313b39 2e2c56
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: izgrimean
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: instagram
+    url: https://www.instagram.com/izgrimean/
+  #- title: github
+  #  url: https://github.com/izgrimean/izgrimean.github.io
+  #- title: twitter
+  #  url: https://twitter.com/bagjeon61147972
+  #- title: facebook
+  #  url: 
+  #- title: stack-overflow
+  #  url: http://stackoverflow.com/questions/tagged/jekyll
+  #- title: bitbucket
+  #  url: http://bitbucket.org/jekyll
+  
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Part of Room 211 on the 2nd floor, used as an office, 
+  - line: 35, Buil-ro 191beon-gil, Wonmi-gu, Bucheon-si, Gyeonggi-do, Republic of Korea
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
+
+# I added (24.05.12)
+include:
+  - _pages
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+
+plugins:
+  - jekyll-feed
+  - jekyll-readme-index
+  - jemoji
+  - jekyll-seo-tag
