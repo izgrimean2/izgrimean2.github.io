@@ -63,8 +63,8 @@
     // 텍스트 변경
     button.innerText = isKor ? "ENG" : "KOR";
     headerText.innerHTML = isKor 
-      ? "A world encountered by chance,<br/>savoring its meaning." 
-      : "우연히 마주친 세계,<br/>그곳의 의미를 향유합니다.";
+      ? "We bring timeless stories<br/>to life in the language of today." 
+      : "오래된 이야기를<br/>오늘의 문장으로 다시 전합니다.";
 
     document.querySelectorAll("[id^='text-kr-']").forEach(element => {
       let enElement = document.getElementById(element.id.replace("text-kr-", "text-en-"));
