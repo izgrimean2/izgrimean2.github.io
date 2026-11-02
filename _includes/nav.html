@@ -1,0 +1,84 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #2d2d51;">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top"><span style="text-transform: lowercase !important;">{{ site.title }}</span></a>
+      <button id="lang-toggle" class="btn btn-toggle" style="margin-top: 10px;">KOR</button>
+    </div>
+  
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="#portfolio">Books</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#about">About</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#contact">Notice</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-- 번역기 버튼 토글 (25.02.21) -->
+<style>
+  .btn-toggle {
+    background: #ffcc00;
+    color: #2d2d51;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-toggle:hover {
+    background: #ffaa00;
+    color: white;
+  }
+</style>
+
+<script>
+  document.getElementById("lang-toggle").addEventListener("click", function() {
+    let button = document.getElementById("lang-toggle");
+    let navMenu = document.getElementById("nav-menu");
+    let headerText = document.getElementById("header-text");
+    let isKor = button.innerText === "KOR";
+
+    // 텍스트 변경
+    button.innerText = isKor ? "ENG" : "KOR";
+    headerText.innerHTML = isKor 
+      ? "A world encountered by chance,<br/>savoring its meaning." 
+      : "우연히 마주친 세계,<br/>그곳의 의미를 향유합니다.";
+
+    document.querySelectorAll("[id^='text-kr-']").forEach(element => {
+      let enElement = document.getElementById(element.id.replace("text-kr-", "text-en-"));
+      if (enElement) {
+        element.style.display = isKor ? "none" : "block";
+        enElement.style.display = isKor ? "block" : "none";
+      }
+    });
+    
+    // 버튼 위치를 오른쪽 → 왼쪽으로 이동
+    if (isKor) {
+      navMenu.insertBefore(button.parentElement, navMenu.firstChild); // 첫 번째 요소로 이동
+    } else {
+      navMenu.appendChild(button.parentElement); // 다시 오른쪽으로 이동
+    }
+  });
+</script>

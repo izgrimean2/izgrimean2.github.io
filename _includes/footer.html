@@ -1,0 +1,66 @@
+<!-- Footer -->
+<footer class="text-center">
+  <div class="footer-above" style="background-color: #2d2d51">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-4">
+          <!-- <h3>{{ site.footer.location }}</h3> -->
+          <h4>Company</h4>
+            
+            <!--
+            <p>
+            {% for adress in site.address %}
+            {{ adress.line }} <br>
+            {% endfor %}
+            </p>
+            -->
+            <p id="text-kr-32" style="font-size: 12pt;">회사명 ｜ 이즈그리민(izgrimean)</p>
+            <p id="text-kr-33" style="font-size: 12pt;">대표자 ｜ 박조은</p>
+            <p id="text-kr-34" style="font-size: 12pt;">사업자등록번호 ｜ 813-22-01805</p>
+            <p id="text-kr-35" style="font-size: 12pt;">주소 ｜ 경기도 시흥시 서울대학로264번길 26-16, 1007-A09호 일부호(배곧동, 해든메디컬센터)</p>
+            <p id="text-en-32" style="font-size: 12pt; display: none;">Company Name ｜ izgrimean</p>
+            <p id="text-en-33" style="font-size: 12pt; display: none;">Representative ｜ Park Jo-eun</p>
+            <p id="text-en-34" style="font-size: 12pt; display: none;">Business Registration Number ｜ 813-22-01805</p>
+            <p id="text-en-35" style="font-size: 12pt; display: none;">Address ｜ 1007-A09, 26-16, Seoul National University-ro 264beon-gil, Siheung-si, Gyeonggi-do, Republic of Korea (Baegot-dong, Haeden Medical Center)</p>
+        </div>
+        <div class="footer-col col-md-4">
+          <h4>{{ site.footer.social }}</h4>
+          <ul class="list-inline">
+            {% for network in site.social %}
+            <li>
+              <a href="{{ network.url }}" class="btn-social btn-outline"><i
+                  class="fa-brands fa-fw fa-{{ network.title }}"></i></a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="footer-col col-md-4">
+          <!-- <h4>{{ site.footer.credits }}</h4>
+          <p>{{ site.credits }}</p> (24.05.24) -->
+          <h4>Contact</h4>
+          <p id="text-kr-36" style="color: white; font-size: 12pt;">이메일 ｜ <a href="mailto:izgrimean@gmail.com"><span style="color: white;">izgrimean@gmail.com</span></a></p> 
+          <p id="text-en-36" style="color: white; font-size: 12pt; display: none;">Email ｜ <a href="mailto:izgrimean@gmail.com"><span style="color: white;">izgrimean@gmail.com</span></a></p> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below" style="background-color: #2d2d51">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Copyright &copy; {{ site.footer.copyright }} 20{{ site.time | date: '%y' }} -->
+          <!-- I updated (24.05.23) -->
+          Copyright &copy; 이즈그리민(izgrimean) 2023
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- 한영 변환 (25.02.21) -->
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visible-sm" style="background-color: #2d2d51">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
