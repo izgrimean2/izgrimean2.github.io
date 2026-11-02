@@ -1,0 +1,379 @@
+<!-- About Section -->
+<section class="success" id="about" style="background-color: #2d2d51 !important;">
+  <div class="container"> 
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>About</h2>
+        <p style = "text-align : center;"><img width="25%" src = "/img/line2.png" alt ="Contact"> </p>
+        <!-- <hr class="star-light"> (24.05.23) -->
+      </div>
+    </div>
+
+    <br/>
+    <br/>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-2">
+        <p id="text-kr-8" style="font-size: 14pt;">이즈그리민(izgrimean)은 글과 그림의 다양한 의미를 전자책이라는 매개체를 통해 구현하고자 하는 출판사입니다. 
+          저희는 지식을 전달하거나, 작가들 저마다의 메시지를 독자들에게 전하기 위해 여러 활동을 이어가고 있습니다. </p>
+        <p id="text-en-8" style="font-size: 14pt; display: none;">
+          Izgrimean is a publishing house that seeks to realize the diverse meanings of text and images through the medium of e-books.  
+          We continue various activities to convey knowledge and deliver each author's unique message to readers.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <p id="text-kr-9" style="font-size: 14pt;">작가들의 경험에서 만들어진, 한 권 한 권의 개성 있는 세상이 독자 여러분께 긍정적인 감정을 이끌어낼 수 있기를 바라는 마음으로 책을 제작하고 있습니다. 
+          여러분이 우연히 글과 그림으로 이루어진 저희 세계에 발을 디뎌, 마음속의 또 다른 문을 여는 계기가 되길 바랍니다.</p>
+        <p id="text-en-9" style="font-size: 14pt; display: none;">
+          We create books with the hope that each unique world, born from the experiences of our authors, will evoke positive emotions in our readers.  
+          We hope that, by chance, you step into our world of text and images and find it to be an opportunity to open another door within your heart.
+        </p>
+      </div>
+      <!--
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <a href="https://github.com/jeromelachaud/freelancer-theme" class="btn btn-lg btn-outline">
+          <i class="fa fa-download"></i> Download Theme
+        </a>
+      </div>
+      -->
+    </div>
+    <br/>
+
+    <style>
+      /* <summary> 버튼 스타일 */
+      summary {
+        display: block; /* 블록 레벨 요소로 만들어 가운데 정렬을 가능하게 함 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+        cursor: pointer; /* 마우스 오버 시 커서 모양을 포인터로 변경 */
+        padding: 10px 20px; /* 내부 여백 추가 */
+        margin: 10px auto; /* 자동 마진으로 가운데 정렬 */
+        width: fit-content; /* 내용에 맞게 너비 조절 */
+        background-color: transparent; /* 배경색 투명 */
+        border: 1px solid white; /* 하얀색 윤곽선 */
+        border-radius: 5px; /* 윤곽선 둥글게 처리 */
+        color: white; /* 텍스트 색상 하얀색 */
+      }
+    
+      /* 클릭 시 및 포커스 시 스타일 */
+      summary:focus, summary:active {
+        outline: none; /* 포커스 시 외곽선 제거 */
+      }
+      /* 초기 숨김 스타일 */
+      .image-container {
+          display: none;
+          text-align: center;
+        }
+      .image-container img {
+        max-width: 100px; /* 최대 너비를 지정하여 이미지 크기를 일정하게 유지합니다. */
+        margin-top: 10px; /* 상단 여백을 추가합니다. */
+      }
+      .book-toggle {
+        display: inline-block;
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        border-color: #2b2b2b; /* newly added */
+        color: #333;
+        text-decoration: none;
+      }
+
+      table {
+          border-collapse: separate; /* 테두리가 겹치지 않도록 설정 */
+          border-spacing: 0; /* 셀 사이의 간격을 없애기 위해 설정 */
+          border-radius: 10px; /* 모서리 둥글게 설정 */
+          overflow: hidden; /* 둥근 모서리 밖의 내용이 보이지 않도록 처리 */
+        }
+      
+        table, th, td {
+          border: 1px solid #ccc; /* 테이블과 셀에 경계선을 추가 */
+        }
+      
+        th, td {
+          padding: 10px; /* 셀 내부의 패딩을 추가 */
+        }
+    </style>
+    <script>
+      function toggleImagesFor(id) {
+        var container = document.getElementById(id);
+        if (container.style.display === 'none' || container.style.display === '') {
+          container.style.display = 'block';
+        } else {
+          container.style.display = 'none';
+        }
+      }
+    </script>
+    
+    <details>
+<summary><span id="text-kr-10">작가 알아보기</span><span id="text-en-10" style="display: none;">Learn More About the Authors</span></summary>
+<br/>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr style="background-color: #d6d6d6;">
+    <td style="padding: 10px; text-align: center;vertical-align: top;">
+      <img src="/img/eunjo2.png" alt="Profile Image" style="width: 100px; height: auto;">
+    </td>
+    <td style="padding: 10px; color: #000000; line-height: 2;">
+      <span id="text-kr-11"><strong>이름/필명</strong> ｜ 이은조 / EUNJOLEE <br/></span>
+      <span id="text-kr-12"><strong>소개</strong> ｜ 서울종합예술실용학교에서 디자인예술계열 시각디자인을 전공하며 학부 과정을 졸업했고, 그 이후에 일본의 교토예술대학 대학원(京都芸術大学大学院)에서 만화를 연구하고 석사과정을 졸업했다. 글과 그림이 가지는 다양한 의미를 책이라는 매개체를 통해 구현하고자 한다.<br/></span> 
+      <span id="text-en-11" style="display: none;"><strong>Name/Pen Name</strong> ｜ EUNJOLEE <br/></span>
+      <span id="text-en-12" style="display: none;"><strong>Introduction</strong> ｜ She graduated with a bachelor’s degree in Visual Design from the Design Arts Department at Seoul Institute of the Arts. She then completed a master’s degree in Manga Studies at the Graduate School of Kyoto University of the Arts (京都芸術大学大学院) in Japan. Through the medium of books, she seeks to express the diverse meanings held by words and images.<br/></span>
+      
+      <strong>Instagram</strong> ｜ @pnueoje <br/>
+      <span><strong id="text-kr-80" class="book-toggle" onclick="toggleImagesFor('bookImages1')">참여한 책 살펴보기</strong><br/></span>
+      <span><strong id="text-en-80" style="display: none;" class="book-toggle" onclick="toggleImagesFor('bookImages1')">Browse the published books</strong><br/></span>
+      <div class="image-container" style="text-align: left;" id="bookImages1">
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book1" style="text-decoration: none;">
+          <img src="/img/jin_kor.jpeg" alt="Profile Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book2" style="text-decoration: none;">
+          <img src="/img/jin_eng.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book3" style="text-decoration: none;">
+          <img src="/img/bio_macro.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book4" style="text-decoration: none;">
+          <img src="/img/organic1.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book5" style="text-decoration: none;">
+          <img src="/img/organic2.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book6" style="text-decoration: none;">
+          <img src="/img/organic3.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book7" style="text-decoration: none;">
+          <img src="/img/organic4.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book8" style="text-decoration: none;">
+          <img src="/img/problem_nomenclature.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book9" style="text-decoration: none;">
+          <img src="/img/problem_isomer.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book10" style="text-decoration: none;">
+          <img src="/img/problem_spectroscopy.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book13" style="text-decoration: none;">
+          <img src="/img/chemistry.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book15" style="text-decoration: none;">
+          <img src="/img/ai.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book22" style="text-decoration: none;">
+          <img src="/img/physico.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book23" style="text-decoration: none;">
+          <img src="/img/stat_eng_2.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book24" style="text-decoration: none;">
+          <img src="/img/stat_eng_1.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book25" style="text-decoration: none;">
+          <img src="/img/idea_glitch.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book26" style="text-decoration: none;">
+          <img src="/img/idea_glitch1.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book27" style="text-decoration: none;">
+          <img src="/img/idea_glitch2.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>
+      </div>
+    </td>
+  </tr>
+  <tr style="background-color: #ffffff;">
+    <td style="padding: 10px; text-align: center;vertical-align: top;">
+      <img src="/img/jeongbin3.jpg" alt="Profile Image" style="width: 100px; height: auto;">
+    </td>
+    <td style="padding: 10px; color: #000000; line-height: 2;">
+      <span id="text-kr-13"><strong>이름/필명</strong> ｜ 박정빈 / Jeongbin Park <br/></span>
+      <span id="text-kr-14"><strong>소개</strong> ｜ 서울대학교에서 공학과 경제학을 전공했으며, 현재 미시간대학교 앤아버 캠퍼스(University of Michigan, Ann Arbor)에서 생물정보학 박사 과정과 컴퓨터공학(ECE) 석사 과정을 복수전공으로 이수 중이다. <br/></span>
+      <span id="text-en-13" style="display: none;><strong">Name/Pen Name</strong> ｜ Jeongbin Park <br/></span>
+      <span id="text-en-14" style="display: none;"><strong>Introduction</strong> ｜ He majored in Engineering and Economics at Seoul National University and is currently pursuing a Ph.D. in Bioinformatics and an M.S. in Electrical and Computer Engineering (ECE) at the University of Michigan, Ann Arbor.<br/></span>
+      
+      <strong>Email</strong> ｜ jeongbp@umich.edu <br/>
+      <span><strong id="text-kr-81" class="book-toggle" onclick="toggleImagesFor('bookImages2')">참여한 책 살펴보기</strong><br/></span>
+      <span><strong id="text-en-81" style="display: none;" class="book-toggle" onclick="toggleImagesFor('bookImages2')">Browse the published books</strong><br/></span>
+      <div class="image-container" style="text-align: left;" id="bookImages2">
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book1" style="text-decoration: none;">
+          <img src="/img/jin_kor.jpeg" alt="Profile Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book2" style="text-decoration: none;">
+          <img src="/img/jin_eng.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book3" style="text-decoration: none;">
+          <img src="/img/bio_macro.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book4" style="text-decoration: none;">
+          <img src="/img/organic1.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book5" style="text-decoration: none;">
+          <img src="/img/organic2.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book6" style="text-decoration: none;">
+          <img src="/img/organic3.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book7" style="text-decoration: none;">
+          <img src="/img/organic4.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book8" style="text-decoration: none;">
+          <img src="/img/problem_nomenclature.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book9" style="text-decoration: none;">
+          <img src="/img/problem_isomer.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book10" style="text-decoration: none;">
+          <img src="/img/problem_spectroscopy.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book13" style="text-decoration: none;">
+          <img src="/img/chemistry.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book15" style="text-decoration: none;">
+          <img src="/img/ai.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book16" style="text-decoration: none;">
+          <img src="/img/cell_biology.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book17" style="text-decoration: none;">
+          <img src="/img/molecular_bio.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book18" style="text-decoration: none;">
+          <img src="/img/plant_microbe.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book19" style="text-decoration: none;">
+          <img src="/img/physiology.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book20" style="text-decoration: none;">
+          <img src="/img/evolution.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book21" style="text-decoration: none;">
+          <img src="/img/experiment_bio.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book22" style="text-decoration: none;">
+          <img src="/img/physico.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book23" style="text-decoration: none;">
+          <img src="/img/stat_eng_2.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book24" style="text-decoration: none;">
+          <img src="/img/stat_eng_1.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book25" style="text-decoration: none;">
+          <img src="/img/idea_glitch.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book26" style="text-decoration: none;">
+          <img src="/img/idea_glitch1.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book27" style="text-decoration: none;">
+          <img src="/img/idea_glitch2.jpg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>
+      </div>
+  </tr>
+  <tr style="background-color: #d6d6d6;">
+    <td style="padding: 10px; text-align: center;vertical-align: top;">
+      <img src="/img/psh.jpg" alt="Profile Image" style="width: 100px; height: auto;">
+    </td>
+    <td style="padding: 10px; color: #000000; line-height: 2;">
+      <span id="text-kr-15"><strong>이름/필명</strong> ｜ 박서혜 / Seo Hye Park <br/></span>
+      <span id="text-kr-16"><strong>소개</strong> ｜ 현재 국내 테크 바이오 기업에서 프로젝트 매니저로 근무하며 공간전사체 연구를 수행하고 있다. 식품분석, 기생충 연구, 진단키트 기업 근무 경험을 바탕으로 생명과학 및 분석 분야의 실무 역량을 쌓아왔다. <br/></span>
+      <span id="text-en-15" style="display: none;"><strong>Name/Pen Name</strong> ｜ Seohye Park <br/></span>
+      <span id="text-en-16" style="display: none;"><strong>Introduction</strong> ｜ She is currently working as a project manager at a Korean tech-bio company, conducting spatial transcriptomics research. Drawing on her experience in food analysis, parasitology research, and work at a diagnostic kit company, she has built practical expertise in the fields of life sciences and analytical research.<br/></span>
+      
+      <strong>Email</strong> ｜ woojoo569@gmail.com <br/>
+      <span><strong id="text-kr-82" class="book-toggle" onclick="toggleImagesFor('bookImages3')">참여한 책 살펴보기</strong><br/></span>
+      <span><strong id="text-en-82" style="display: none;" class="book-toggle" onclick="toggleImagesFor('bookImages3')">Browse the published books</strong><br/></span>
+      <div class="image-container" style="text-align: left;" id="bookImages3">
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book3" style="text-decoration: none;">
+          <img src="/img/bio_macro.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book13" style="text-decoration: none;">
+          <img src="/img/chemistry.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+      </div>
+    </td>
+  </tr>
+  <tr style="background-color: #ffffff;">
+    <td style="padding: 10px; text-align: center;vertical-align: top;">
+      <img src="/img/namyeong2.png" alt="Profile Image" style="width: 100px; height: auto;">
+    </td>
+    <td style="padding: 10px; color: #000000; line-height: 2;">
+      <span id="text-kr-17"><strong>이름/필명</strong> ｜ 김남영 / Namyoung Kim <br/></span>
+      <span id="text-kr-18"><strong>소개</strong> ｜ 폴리텍대학교 미디어콘텐츠학과와 한림대학교 디지털미디어콘텐츠학과를 졸업했다. 현재 사진작가로 활동하며 사진, 영상, 출판 편집 등 다양한 미디어 콘텐츠 작업을 이어가고 있다. <br/></span>
+      <span id="text-en-17" style="display: none;"><strong>Name/Pen Name</strong> ｜ Kim Namyeong / Namyeong Kim <br/></span>
+      <span id="text-en-18" style="display: none;"><strong>Introduction</strong> ｜ He graduated from the Department of Media Content at Korea Polytechnics and the Department of Digital Media Content at Hallym University. He currently works as a photographer and continues to create a wide range of media content, including photography, video, and publication editing. <br/></span>
+      
+      <strong>Email</strong> ｜ pio__@naver.com <br/>
+      <span><strong id="text-kr-83" class="book-toggle" onclick="toggleImagesFor('bookImages4')">참여한 책 살펴보기</strong><br/></span>
+      <span><strong id="text-en-83" style="display: none;" class="book-toggle" onclick="toggleImagesFor('bookImages4')">Browse the published books</strong><br/></span>
+      <div class="image-container" style="text-align: left;" id="bookImages4">
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book3" style="text-decoration: none;">
+          <img src="/img/bio_macro.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book13" style="text-decoration: none;">
+          <img src="/img/chemistry.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+      </div>
+    </td>
+  </tr>
+  <tr style="background-color: #d6d6d6;">
+    <td style="padding: 10px; text-align: center;vertical-align: top;">
+      <img src="/img/bone.png" alt="Profile Image" style="width: 100px; height: auto;">
+    </td>
+    <td style="padding: 10px; color: #000000; line-height: 2;">
+      <span id="text-kr-19"><strong>이름/필명</strong> ｜ Bone <br/></span>
+      <span id="text-kr-20"><strong>소개</strong> ｜ 일러스트레이터. 중국의 동북대학(东北大学)에서 그래픽디자인과를 졸업하고, 일본의 교토예술대학 대학원(京都芸術大学大学院)에서 디자인 영역 그림책 분야를 연구하고, 졸업했다. 지금은 베이징에서 아틀리에를 운영하고 있다. 여러 그림들의 흐름 속의 이미지를 통해 이야기 그 이상의 것을 표현하고자 한다. <br/></span>
+      <span id="text-en-19" style="display: none;"><strong>Name/Pen Name</strong> ｜ Bone <br/></span>
+      <span id="text-en-20" style="display: none;"><strong>Introduction</strong> ｜ Illustrator. Graduated with a degree in Graphic Design from Northeast University (东北大学) in China, and pursued research in the field of illustrated books within design at Kyoto University of the Arts Graduate School (京都芸術大学大学院) in Japan, where he also graduated. Currently, he operates an atelier in Beijing, aiming to express something beyond mere storytelling through the flow of imagery in his illustrations.<br/></span>
+      
+      <strong>Email</strong> ｜ bone940416@gmail.com <br/>
+      <span><strong id="text-kr-84" class="book-toggle" onclick="toggleImagesFor('bookImages5')">참여한 책 살펴보기</strong><br/></span>
+      <span><strong id="text-en-84" style="display: none;" class="book-toggle" onclick="toggleImagesFor('bookImages5')">Browse the published books</strong><br/></span>
+      <div class="image-container" style="text-align: left;" id="bookImages5">
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book11" style="text-decoration: none;">
+          <img src="/img/owl_wall_kor.jpeg" alt="Profile Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book12" style="text-decoration: none;">
+          <img src="/img/owll_wall_eng.jpeg" alt="Profile Image" style="width: 100px; height: 155px;">
+        </a>　
+      </div>
+    </td>
+  </tr>
+  <tr style="background-color: #ffffff;">
+    <td style="padding: 10px; text-align: center;vertical-align: top;">
+      <img src="/img/eunjo.png" alt="Profile Image" style="width: 100px; height: auto;">
+    </td>
+    <td style="padding: 10px; color: #000000; line-height: 2;">
+      <span id="text-kr-21"><strong>이름/필명</strong> ｜ Beibei <br/></span>
+      <span id="text-kr-22"><strong>소개</strong> ｜ 일본의 교토예술대학 대학원(京都芸術大学大学院)에서 디자인 영역 일러스트레이션 전공을 졸업했다. 현재는 일러스트레이터와 강사, 그리고 대학 강사로 활동하고 있다. 주로 종합적인 재료를 사용하거나, 디지털 작업으로 작품을 표현하고 있다. <br/></span>
+      <span id="text-en-21" style="display: none;"><strong>Name/Pen Name</strong> ｜ Beibei <br/></span>
+      <span id="text-en-22" style="display: none;"><strong>Introduction</strong> ｜ Graduated with a major in Illustration within the Design field from Kyoto University of the Arts Graduate School (京都芸術大学大学院) in Japan. Currently working as an illustrator, instructor, and university lecturer. Primarily expresses artwork using mixed media or digital techniques.<br/></span>
+      
+      <strong>Email</strong> ｜ hmx4869@gmail.com<br/>
+      <span><strong id="text-kr-85" class="book-toggle" onclick="toggleImagesFor('bookImages6')">참여한 책 살펴보기</strong><br/></span>
+      <span><strong id="text-en-85" style="display: none;" class="book-toggle" onclick="toggleImagesFor('bookImages6')">Browse the published books</strong><br/></span>
+      <div class="image-container" style="text-align: left;" id="bookImages6">
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book16" style="text-decoration: none;">
+          <img src="/img/cell_biology.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book17" style="text-decoration: none;">
+          <img src="/img/molecular_bio.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book18" style="text-decoration: none;">
+          <img src="/img/plant_microbe.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book19" style="text-decoration: none;">
+          <img src="/img/physiology.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book20" style="text-decoration: none;">
+          <img src="/img/evolution.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a><br/>
+        <a rel="noopener" target="_blank" href="https://izgrimean.github.io/book21" style="text-decoration: none;">
+          <img src="/img/experiment_bio.jpeg" alt="Another Image" style="width: 100px; height: 155px;">
+        </a>　
+      </div>
+    </td>
+  </tr>
+</table>
+</details>
+
+
+  </div>
+</section>
